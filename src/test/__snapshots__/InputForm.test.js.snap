@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputForm component matches the snapshot 1`] = `
+<DocumentFragment>
+  <form>
+    <input
+      placeholder="Add task"
+      type="text"
+      value=""
+    />
+  </form>
+</DocumentFragment>
+`;
