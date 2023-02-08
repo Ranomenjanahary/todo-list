@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DoneList component renders correctly with snapshot 1`] = `
+<div>
+  <div
+    class="done"
+  >
+    <h3>
+      DONE
+    </h3>
+    <ul>
+      <li>
+        task 1
+      </li>
+      <li>
+        task 2
+      </li>
+    </ul>
+  </div>
+</div>
+`;

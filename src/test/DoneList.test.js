@@ -1,18 +1,11 @@
 import React from 'react';
-import { render, cleanup } from '@testing-library/react';
-import '@testing-library/jest-dom/extend-expect';
 import { DoneList } from '../components/DoneList';
-
-
-afterEach(cleanup);
+import { render } from '@testing-library/react';
 
 describe('DoneList component', () => {
-  it('renders done tasks', () => {
-    const done = ['task 1', 'task 2', 'task 3'];
-    const { getByText } = render(<DoneList done={done} />);
-
-    done.forEach(task => {
-      expect(getByText(task)).toBeInTheDocument();
-    });
+  it('renders correctly with snapshot', () => {
+    const done = ['task 1', 'task 2'];
+    const { container } = render(<DoneList done={done} />);
+    expect(container).toMatchSnapshot();
   });
 });
